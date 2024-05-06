@@ -23,6 +23,10 @@ function separarPalabras (frase) {
     return palabrasArray
 }
 
+/* function separarPalabras(string) {
+    return string.split(' ');
+} */
+
 function repetirString (string , a) {
     let stringRepeticion = ''
     
@@ -32,6 +36,10 @@ function repetirString (string , a) {
 
     return stringRepeticion
 }
+/* function repetirString(string, veces) {
+    return string.repeat(veces);
+}
+ */
 
 
 // -----------------------------------------------------------
@@ -104,9 +112,14 @@ function obtenerPares (numerosPares) {
     const pares = obtenerPares (arrayEx) ;
 }
 
-function pintarArray () {
 
+/* ---- */
+function pintarArray(array) {
+    return `([${array.join(',')}])`;
 }
+const arrayEntrada = [0,1,2];
+console.log(pintarArray(arrayEntrada));
+
 
 
 function arrayMapi (arr,fun) {
@@ -138,11 +151,20 @@ function multiplicacion (a , b) {
     return a*b
 }
 
+
 function division (a , b) {
     return a/b
 }
+/* function division(a, b) {
+    if (b === 0) {
+        return "No se puede dividir por cero";
+    }
+    return a / b;
+} */
 
-function esPar (a) {
+
+
+/* function esPar (a) {
     let sumaPares = 0
 
     for (let i=0 ; i<10 ; i++) {
@@ -152,8 +174,80 @@ function esPar (a) {
     } else {
         return false
     }
-
-    
+}
+ */
+function esPar(numero) {
+    return numero % 2 === 0;
 }
 
+/* --- */ /* Revisar */
+/* const arrayFunciones = [suma, resta, multiplicacion];
 
+// Definición de funciones necesarias para el ejercicio 22
+function suma(a, b) {
+    return a + b;
+}
+function resta(a, b) {
+    return a - b;
+}
+
+// Ejercicio 19
+function multiplicacion(a, b) {
+    return a * b;
+}
+
+// Ejercicio 20
+function division(a, b) {
+    if (b === 0) {
+        return "No se puede dividir por cero";
+    }
+    return a / b;
+}
+
+// Ejercicio 21
+function esPar(numero) {
+    return numero % 2 === 0;
+}
+
+// Ejercicio 22
+// Definición de funciones necesarias
+function suma(a, b) {
+    return a + b;
+}
+function resta(a, b) {
+    return a - b;
+}
+function multiplicacion(a, b) {
+    return a * b;
+} */
+
+// Creación del array con las funciones
+const arrayFuncs = [suma, resta, multiplicacion];
+// Ejemplo de uso
+const resultadoSuma = arrayFuncs[0](4, 2); // Llama a la función suma: 4 + 2
+const resultadoResta = arrayFuncs[1](4, 2); // Llama a la función resta: 4 - 2
+const resultadoMultiplicacion = arrayFuncs[2](4, 2); // Llama a la función multiplicación: 4 * 2
+console.log(resultadoSuma); // Output: 6
+console.log(resultadoResta); // Output: 2
+console.log(resultadoMultiplicacion); // Output: 8
+
+
+// Ejercicio 23
+function ordenarArray2(array) {
+    return array.slice().sort((a, b) => b - a);
+}
+
+// Ejercicio 24
+function obtenerImpares(array) {
+    return array.filter(num => num % 2 !== 0);
+}
+
+// Ejercicio 25
+function sumarArray(array) {
+    return array.reduce((total, num) => total + num, 0);
+}
+
+// Ejercicio 26
+function multiplicarArray(array) {
+    return array.reduce((total, num) => total * num, 1);
+}
