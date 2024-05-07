@@ -191,12 +191,12 @@ function resta(a, b) {
     return a - b;
 }
 
-// Ejercicio 19
+
 function multiplicacion(a, b) {
     return a * b;
 }
 
-// Ejercicio 20
+
 function division(a, b) {
     if (b === 0) {
         return "No se puede dividir por cero";
@@ -204,12 +204,12 @@ function division(a, b) {
     return a / b;
 }
 
-// Ejercicio 21
+
 function esPar(numero) {
     return numero % 2 === 0;
 }
 
-// Ejercicio 22
+
 // Definición de funciones necesarias
 function suma(a, b) {
     return a + b;
@@ -232,22 +232,22 @@ console.log(resultadoResta); // Output: 2
 console.log(resultadoMultiplicacion); // Output: 8
 
 
-// Ejercicio 23
+
 function ordenarArray2(array) {
     return array.slice().sort((a, b) => b - a);
 }
 
-// Ejercicio 24
+
 function obtenerImpares(array) {
     return array.filter(num => num % 2 !== 0);
 }
 
-// Ejercicio 25
+
 function sumarArray(array) {
     return array.reduce((total, num) => total + num, 0);
 }
 
-// Ejercicio 26
+
 function multiplicarArray(array) {
     return array.reduce((total, num) => total * num, 1);
 }
